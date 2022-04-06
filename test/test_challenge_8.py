@@ -7,12 +7,12 @@ class TestIsPalindrome(unittest.TestCase):
     # check happy path
     def test_is_palindrome(self):
         # test palindrome when has a correct palindrome is in uppercase,
-        self.assertAlmostEqual(is_palindrome('Ana'), True)
-        self.assertAlmostEqual(is_palindrome('ojo'), True)
+        self.assertAlmostEqual(is_palindrome("Ana"), True)
+        self.assertAlmostEqual(is_palindrome("ojo"), True)
         # when has accents and spaces
-        self.assertAlmostEqual(is_palindrome('Amó la paloma'), True)
-        self.assertAlmostEqual(is_palindrome('Yo hago yoga hoy'), True)
-        self.assertAlmostEqual(is_palindrome('Sé verlas al revés'), True)
+        self.assertAlmostEqual(is_palindrome("Amó la paloma"), True)
+        self.assertAlmostEqual(is_palindrome("Yo hago yoga hoy"), True)
+        self.assertAlmostEqual(is_palindrome("Sé verlas al revés"), True)
 
     # test if my function handles improper inputs correctly and raises a value error
     def test_values(self):

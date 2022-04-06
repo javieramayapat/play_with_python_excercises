@@ -29,13 +29,23 @@ def run():
     """
     Escribir un programa que pida al usuario una palabra y muestre por pantalla si es un palíndromo.
     """
-    palindrome_words = ['Amó la paloma', 'ana', 'jose', 'Ojo',
-                        'perro', 'Yo hago yoga hoy', 'Sé verlas al revés', 1, True, None]
+    palindrome_words = [
+        "Amó la paloma",
+        "ana",
+        "jose",
+        "Ojo",
+        "perro",
+        "Yo hago yoga hoy",
+        "Sé verlas al revés",
+        1,
+        True,
+        None,
+    ]
     message = "The word {word_to_check} is a palindrome? - {result}"
     for word in palindrome_words:
         result = is_palindrome(word)
         print(message.format(word_to_check=word, result=result))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run()
